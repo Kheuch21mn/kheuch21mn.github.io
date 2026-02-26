@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheikh Mohamed NDIAYE | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Particules d'arrière-plan -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Curseur Personnalisé -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">Kheuch<span class="highlight">21</span>mn</a>
+            <ul class="nav-links">
+                <li><a href="#about" class="active">À propos</a></li>
+                <li><a href="#skills">Stack</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact" class="btn-contact">Me contacter</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section-spacing">
+            <div class="hero-content fade-up">
+                <p class="greeting">Bonjour, je m'appelle</p>
+                <h1 class="glitch" data-text="Cheikh Mohamed NDIAYE">Cheikh Mohamed NDIAYE</h1>
+                <h2 class="role">&lt; Développeur Full-Stack /&gt;</h2>
+                <p class="bio">
+                    Passionné par la création d'expériences numériques interactives et performantes.
+                    Je transforme des idées complexes en applications web élégantes et fluides.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn primary">Voir mes projets <i data-lucide="arrow-right"></i></a>
+                    <a href="https://github.com/Kheuch21mn" target="_blank" class="btn secondary"><i
+                            data-lucide="github"></i> Mon GitHub</a>
+                </div>
+            </div>
+
+            <div class="hero-graphic fade-in">
+                <div class="cube-container">
+                    <div class="cube">
+                        <div class="face front">React</div>
+                        <div class="face back">Node</div>
+                        <div class="face right">TS</div>
+                        <div class="face left">CSS</div>
+                        <div class="face top">SQL</div>
+                        <div class="face bottom">Git</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- À Propos / Skills -->
+        <section id="skills" class="skills-section section-spacing">
+            <h2 class="section-title fade-up">Mon Arsenal <span class="highlight">Technique</span></h2>
+
+            <div class="skills-grid">
+                <!-- Skill Card 1 -->
+                <div class="skill-card glass fade-up" style="transform-origin: center; transition-delay: 100ms;">
+                    <div class="skill-icon"><i data-lucide="layout"></i></div>
+                    <h3>Frontend</h3>
+                    <p>React, TypeScript, Tailwind CSS, Framer Motion. Création d'interfaces modernes et réactives.</p>
+                </div>
+
+                <!-- Skill Card 2 -->
+                <div class="skill-card glass fade-up" style="transition-delay: 200ms;">
+                    <div class="skill-icon"><i data-lucide="database"></i></div>
+                    <h3>Backend</h3>
+                    <p>Node.js, PostgreSQL, Supabase. Architecture de bases de données et API robustes.</p>
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="skill-card glass fade-up" style="transition-delay: 300ms;">
+                    <div class="skill-icon"><i data-lucide="smartphone"></i></div>
+                    <h3>Mobile / Web Apps</h3>
+                    <p>Capacitor, PWA. Transformation d'applications web en expériences mobiles natives.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projets -->
+        <section id="projects" class="projects-section section-spacing">
+            <h2 class="section-title fade-up">Projets <span class="highlight">Phares</span></h2>
+
+            <div class="projects-container">
+                <!-- Projet principal: Cyber Game -->
+                <div class="project-card glass hover-effect fade-up">
+                    <div class="project-content">
+                        <p class="project-kicker">Projet Vedette</p>
+                        <h3 class="project-title">Cyber Game Portal</h3>
+                        <div class="project-description">
+                            <p>
+                                Une plateforme de jeux multijoueurs en temps réel ultra-moderne incluant Ludo, Échecs,
+                                Uno, Puissance 4 et Pierre-Feuille-Ciseaux.
+                                Intègre un système économique (coins/credits), un chat en direct sécurisé, la sélection
+                                d'adversaires et le mode "Immersive".
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>Supabase Realtime</li>
+                            <li>TailwindCSS</li>
+                            <li>Framer Motion</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="link-icon disabled" onclick="event.preventDefault()">
+                                <i data-lucide="lock"></i> En privé pour le moment
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <!-- Espace pour un screenshot du jeu -->
+                        <div class="placeholder-image">
+                            <i data-lucide="gamepad-2" class="large-icon"></i>
+                            <div class="overlay-grad"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Autre projet placeholder -->
+                <div class="project-card glass hover-effect reverse fade-up">
+                    <div class="project-content">
+                        <p class="project-kicker">Concept</p>
+                        <h3 class="project-title">Future App</h3>
+                        <div class="project-description">
+                            <p>
+                                Une application innovante à venir... (Espace réservé pour votre prochain grand projet).
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>Next.js</li>
+                            <li>Node</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="link-icon disabled">
+                                <i data-lucide="lock"></i> En développement
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="placeholder-image alt">
+                            <i data-lucide="code-2" class="large-icon"></i>
+                            <div class="overlay-grad"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact-section section-spacing">
+            <div class="contact-box glass fade-up">
+                <h2 class="section-title">Construisons l'<span class="highlight">Avenir</span></h2>
+                <p>
+                    Actuellement ouvert à de nouvelles opportunités passionnantes. Que vous ayez une question, une
+                    proposition de projet ou que vous souhaitiez simplement dire bonjour, je vous répondrai dans les
+                    plus brefs délais !
+                </p>
+                <a href="mailto:contact@kheuch21mn.com" class="btn primary large mt-4">Dire Bonjour</a>
+
+                <div class="social-links mt-8">
+                    <a href="https://github.com/Kheuch21mn" target="_blank" aria-label="GitHub"><i
+                            data-lucide="github"></i></a>
+                    <a href="#" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="#" target="_blank" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Conçu & Développé avec <i data-lucide="heart" class="heart-icon"></i> par Cheikh Mohamed NDIAYE</p>
+        <p class="copyright">© 2026 Kheuch21mn. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialiser les icônes Lucide
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
